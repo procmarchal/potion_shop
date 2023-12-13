@@ -8,6 +8,8 @@ This document assumes the reader is already familiar with web application securi
 
 Potion Shop is vulnerable to persistent XSS. Trigger the JavaScript `alert(1)`, and write a brief explanation of how an attacker would use this vulnerability to harm users. 
 
+Answer: in the review section you can add `<script>alert(1)</script>` and it displays the alert box. You could access the cookies and hijike the session to write review, get email.
+
 ### 2. Cross Site Request Forgery (CSRF)
 
 Potion Shop is vulnerable to CSRF. Create a proof of concept HTML page showing how an attacker would exploit this flaw, and explain how an attacker would use the page in a real attack.
