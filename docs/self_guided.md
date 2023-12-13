@@ -20,6 +20,11 @@ Potion Shop is vulnerable to RCE. Create a proof of concept payload that causes 
 
 Potion Shop is vulnerable to SQL injection. Show how an attacker can use this weakness to access private data from the database. What else can an attacker do with this security bug?
 
+Answer: put the following in the search bar to access secret potions:
+```
+' AND p.secret = true or p.name LIKE '
+```
+
 ### 5. Broken Access Control
 
 In Potion Shop, an attacker can create new records in the database with the wrong author. Show how this attack works, and explain the problem with the current implementation.
